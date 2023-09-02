@@ -1,0 +1,36 @@
+<script>
+    var arr = [20, 30, 40, 89, 90, 67, 78, -20, 67];
+    // (9) [90, 89, 78, 67, 67, 40, 30, 20, -20]   Arrange values in descending order using while loop
+
+
+    // for (i = 1; i < arr.length; i++) {
+    //     for (j = 0; j < i; j++) {
+    //         if (arr[i] > arr[j]) {
+    //             var x = arr[i]
+    //             arr[i] = arr[j]
+    //             arr[j] = x
+    //         }
+    //     }
+    // }
+    // console.log(arr)
+
+    i = 1
+
+    while (i < arr.length) {
+        j = 0
+        while (j < i) {
+            if (arr[i] > arr[j]) {
+                var x = arr[i]
+                arr[i] = arr[j]
+                arr[j] = x
+            }
+
+
+
+            j++
+        }
+
+        i++
+    }
+    console.log(arr)
+</script>

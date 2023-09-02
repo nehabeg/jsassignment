@@ -1,0 +1,23 @@
+<script>
+    var arr = [20, 30, 40, 89, 90, 67, 78, -20, 67];
+
+    var largest = Number.MIN_VALUE;
+    var slargest = Number.MIN_VALUE;
+
+    for (i = 0; i < arr.length; i++) {
+        if (largest < arr[i]) {
+            slargest = largest;
+
+            largest = arr[i];
+
+
+        }
+        else if (slargest < arr[i] && largest > arr[i]) {
+
+            slargest = arr[i]
+        }
+
+    }
+    console.log("second largest",slargest);
+
+</script>

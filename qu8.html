@@ -1,0 +1,20 @@
+<script>
+    var arr = [20, 30, 40, 89, 90, 67, 78, -20, 67];
+
+//  Arrange values in ascending order using for loop   (9) [-20, 20, 30, 40, 67, 67, 78, 89, 90]
+
+
+    for (i = 1; i < arr.length; i++) {
+        for (j = 0; j < i; j++) {
+
+            if (arr[i] < arr[j]) {
+                var x = arr[i];
+                arr[i] = arr[j];
+                arr[j] = x
+            }
+
+        }
+    }
+    console.log(arr)
+
+</script>
